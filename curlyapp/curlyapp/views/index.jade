@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	.logo
+		h1= title
+		// title Welcome to #{title}
+	.container
+		.dashed-box-yellow
+			.dashed-box-pink
+
+				.forecast-wrapper
+					#recommendation
+						p
+							| How should you wear your hair?
+					.forecast
+						p 
+							| The forecast is #[span#textforecast] today, with a high temperature of #[highforecast]
+						p 
+							| The humidity is #[span#humidity]
+						p.change-zipcode Change your location
+						p.looking-at
+							| You are looking at the forecast for: 11237
+
+							
