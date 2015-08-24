@@ -1,24 +1,28 @@
 extends layout
 
 block content
-	.logo
-		h1= title
-		// title Welcome to #{title}
+	h1= title
+	// title Welcome to #{title}
 	.container
-		.dashed-box-yellow
-			.dashed-box-pink
+		.row
+			.col-xs-12.col-lg-8.col-lg-offset-2
+				.dashed-box-outer
+					.dashed-box-inner
 
-				.forecast-wrapper
-					#recommendation
-						p
-							| How should you wear your hair?
-					.forecast
-						p 
-							| The forecast is #[span#textforecast] today, with a high temperature of #[highforecast]
-						p 
-							| The humidity is #[span#humidity]
-						p.change-zipcode Change your location
-						p.looking-at
-							| You are looking at the forecast for: 11237
-
-							
+						.forecast-wrapper
+							#recommendation
+								.dryer
+								p
+									| How should you wear your hair?
+								.cloudcat
+							.forecast
+								p 
+									| The forecast is #[span#textforecast] today, with a high temperature of #[highforecast]
+								p 
+									| The humidity is #[span#humidity]
+								button(class="btn btn-success change-zipcode")
+									| Change your location
+								p.looking-at
+									| You are looking at the forecast for: 11237
+		.credits
+			| Icons created by Arthur Schalin and Erika Kim from the Noun Project

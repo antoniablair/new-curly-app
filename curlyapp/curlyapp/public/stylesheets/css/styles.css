@@ -1,65 +1,74 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  position: relative; }
-
-body {
+body.curly {
   font-family: "Memphis", Arial;
-  background: #32C4C6; }
+  background: url("/images/dark_embroidery.png"); }
+  body.curly h1 {
+    color: #CC3299;
+    margin-top: 50px;
+    top: 12px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Pacifico", cursive;
+    font-size: 44px;
+    display: block;
+    text-align: center;
+    text-shadow: 2px 2px #000000; }
+
+.dryer {
+  background: url("/images/dryer.svg");
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  left: 88px;
+  top: 38px;
+  margin-left: 10px;
+  background-size: 90px 90px; }
+
+.cloudcat {
+  background: url("/images/cloudcat.svg");
+  width: 80px;
+  height: 80px;
+  float: right;
+  margin-top: -70px;
+  background-size: 100px 100px; }
 
 #recommendation {
   font-size: 28px;
   font-weight: bold;
   text-align: center;
-  padding: 20px 20px 0px 20px; }
+  padding: 20px 60px 0px 60px; }
 
 .container {
   width: 100%;
   padding-top: 4%; }
 
-/* Dashed border */
-.dashed-box, .dashed-box-yellow, .dashed-box-pink {
+.dashed-box, .dashed-box-outer, .dashed-box-inner {
   display: block;
-  margin: 0px auto;
   border-style: dashed;
-  border-width: 2px; }
+  border-width: 2px;
+  border-radius: 15px; }
 
-.dashed-box-yellow {
-  width: 465px;
-  border-color: #FAE471; }
+.dashed-box-outer {
+  width: 100%;
+  padding: 10px;
+  border-color: #AC2B87;
+  margin-left: auto;
+  margin-right: auto; }
 
-.dashed-box-pink {
-  margin: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 440px;
+.dashed-box-inner {
   background: #34ABAC;
-  border-color: #F957CA; }
+  border-color: #FAE471;
+  padding-left: 20px;
+  padding-right: 20px; }
 
-.change-zipcode {
-  background: #F957CA;
+.btn.change-zipcode {
+  background: #238E23;
   color: #fff;
   display: block;
-  width: 60%;
-  font-size: 18px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  text-transform: uppercase;
-  color: #fff; }
-
-.logo {
-  margin-top: 20px; }
-
-h1 {
-  top: 12px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Pacifico", cursive;
-  font-size: 44px;
-  display: block;
-  text-align: center; }
+  text-transform: uppercase; }
 
 p {
   font-family: "Memphis", Arial;
@@ -71,5 +80,10 @@ p {
 .looking-at {
   text-transform: uppercase;
   font-size: 12px;
-  color: #494848;
+  color: #191919;
   font-weight: 500; }
+
+.credits {
+  margin-top: 100px;
+  color: #000000;
+  font-size: 10px; }

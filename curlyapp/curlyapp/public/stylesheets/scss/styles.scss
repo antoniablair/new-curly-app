@@ -2,30 +2,63 @@ $font-stack: 'Futura', sans-serif;
 $bodytext: 'Memphis', Arial;
 $cursive: 'Pacifico', cursive;
 $softyellow: #FAE471;
-$pink: #F957CA;
+$pink: #CC3299;
+$bubblegum: #FF6EC7;
 $magenta: #AC2B87;
 $aqua: #32C4C6;
 $aquamatte: #34ABAC;
 $white: #fff;
 $darkgrey: #494848;
+$verydarkgrey: #191919;
+$darkpurple: #4F2F4F;
+$green: #238E23;
+$black: #000000;
 
 
-* {
-margin: 0px;
-padding: 0px;
-position: relative;
+body.curly {
+	font-family: $bodytext;
+	background: url("/images/dark_embroidery.png");
+
+	h1 {
+	color: $pink;
+	margin-top: 50px;
+	top: 12px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: $cursive;
+	font-size: 44px;
+	display: block;
+	text-align: center;
+	text-shadow: 2px 2px $black;
+	}
 }
 
-body {
-	font-family: $bodytext;
-	background: $aqua;
+.dryer {
+	background: url("/images/dryer.svg");
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	left: 88px;
+	top: 38px;
+	margin-left: 10px;
+	background-size: 60px 60px;
+}
+
+.cloudcat {
+	background: url("/images/cloudcat.svg");
+	width: 80px;
+	height: 80px;
+	float: right;
+	margin-top: -70px;
+	background-size: 100px 100px;
 }
 
 #recommendation {
 	font-size: 28px;
 	font-weight: bold;
 	text-align: center;
-	padding: 20px 20px 0px 20px;
+	padding: 20px 60px 0px 60px;
 }
 
 .container {
@@ -33,56 +66,38 @@ body {
 	padding-top: 4%;
 }
 
-/* Dashed border */
 .dashed-box {
 	display: block;
-	margin: 0px auto;
 	border-style: dashed;
 	border-width: 2px;
+	border-radius: 15px;
 }
 
-.dashed-box-yellow {
+.dashed-box-outer{
 	@extend .dashed-box;
-	width: 465px;
-	border-color: $softyellow;
+	width: 100%;
+	padding: 10px;
+	border-color: $magenta;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.dashed-box-pink {
+.dashed-box-inner {
 	@extend .dashed-box;
-	margin: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
-	width: 440px;
 	background: $aquamatte;
-	border-color: $pink;
+	border-color: $softyellow;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
-.change-zipcode {
-	background: $pink;
+.btn.change-zipcode {
+	background: $green;
 	color: $white;
 	display: block;
-	width: 60%;
-	font-size: 18px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	text-transform: uppercase;
-	color: $white;
-}
-
-.logo {
-	margin-top: 20px;
-}
-
-h1 {
-top: 12px;
-width: 100%;
-margin-left: auto;
-margin-right: auto;
-font-family: $cursive;
-font-size: 44px;
-display: block;
-text-align: center;
 }
 
 p {
@@ -96,6 +111,35 @@ padding: 10px;
 .looking-at {
 	text-transform: uppercase;
 	font-size: 12px;
-	color: $darkgrey;
+	color: $verydarkgrey;
 	font-weight: 500;
 }
+
+.credits {
+	margin-top: 100px;
+	color: $black;
+	font-size: 10px; 
+}
+
+
+// @media (min-width: @screen-md-min) { 
+// 	.dryer {
+// 		background: url("/images/dryer.svg");
+// 		width: 100px;
+// 		height: 80px;
+// 		position: absolute;
+// 		left: 88px;
+// 		top: 38px;
+// 		margin-left: 10px;
+// 		background-size: 90px 90px;
+// 	}
+
+// 	.cloudcat {
+// 		background: url("/images/cloudcat.svg");
+// 		width: 80px;
+// 		height: 80px;
+// 		float: right;
+// 		margin-top: -70px;
+// 		background-size: 100px 100px;
+// 	}
+// }
